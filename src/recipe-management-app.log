@@ -1,0 +1,170 @@
+2023-03-29 00:11:35,794 [INFO] com.api.recipemanagement.RecipeManagementApplication [restartedMain] Starting RecipeManagementApplication using Java 19.0.2 with PID 19676 (D:\Liknes\Docs\Notes\Personal\SprintBoot\projects\recipe-mamagement-api\recipe-management-api\target\classes started by liknes in D:\Liknes\Docs\Notes\Personal\SprintBoot\projects\recipe-mamagement-api\recipe-management-api)
+2023-03-29 00:11:35,801 [INFO] com.api.recipemanagement.RecipeManagementApplication [restartedMain] The following 1 profile is active: "local"
+2023-03-29 00:11:35,848 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-29 00:11:35,848 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-29 00:11:36,684 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8090 (http)
+2023-03-29 00:11:36,691 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-03-29 00:11:36,692 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-29 00:11:36,736 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-03-29 00:11:36,737 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 888 ms
+2023-03-29 00:11:36,763 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-03-29 00:11:36,920 [INFO] com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@d824f47
+2023-03-29 00:11:36,921 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-03-29 00:11:36,930 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/recipeapidb'
+2023-03-29 00:11:37,631 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-03-29 00:11:37,654 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8090 (http) with context path ''
+2023-03-29 00:11:37,662 [INFO] com.api.recipemanagement.RecipeManagementApplication [restartedMain] Started RecipeManagementApplication in 2.212 seconds (process running for 2.579)
+2023-03-29 00:12:06,695 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8090-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-29 00:12:06,695 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8090-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-03-29 00:12:06,697 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8090-exec-2] Completed initialization in 0 ms
+2023-03-29 00:12:06,769 [INFO] com.api.recipemanagement.resources.RecipeResource [http-nio-8090-exec-2] REQUEST :: loginUser for userName: Tony
+2023-03-29 00:12:06,874 [INFO] com.api.recipemanagement.resources.RecipeResource [http-nio-8090-exec-2] RESPONSE :: token generated for userName: Tony
+2023-03-29 00:13:12,909 [INFO] com.api.recipemanagement.resources.RecipeResource [http-nio-8090-exec-7] REQUEST :: getAllRecipes for userId: 1001
+2023-03-29 00:13:12,939 [INFO] com.api.recipemanagement.resources.RecipeResource [http-nio-8090-exec-7] RESPONSE :: 2 recipes returned for userId: 1001
+2023-03-29 00:15:32,636 [INFO] org.apache.coyote.http11.Http11Processor [http-nio-8090-exec-4] Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x000x010x000x010xfc0x030x03z0xe000xc10x990x050x1d130x9c0xaf;:0xa80x060xb00xb0K0xa00xdf0x040xe70xa40xe2f0x1d0xf2Az0xea0x070x14 ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:407)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:263)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+2023-03-29 00:18:15,710 [INFO] com.api.recipemanagement.resources.RecipeResource [http-nio-8090-exec-4] REQUEST :: registerUser with userName: Tony and email: tony.stark@avengers.com
+2023-03-29 00:18:15,728 [WARN] org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver [http-nio-8090-exec-4] Resolved [com.api.recipemanagement.exceptions.BadRequestException: Username already in use]
+2023-03-29 00:22:17,486 [INFO] com.api.recipemanagement.resources.RecipeResource [http-nio-8090-exec-9] REQUEST :: registerUser with userName: Tony and email: tony.stark@avengers.com
+2023-03-29 00:22:17,492 [WARN] org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver [http-nio-8090-exec-9] Resolved [com.api.recipemanagement.exceptions.BadRequestException: Username already in use]
+2023-03-29 00:22:19,792 [INFO] com.api.recipemanagement.resources.RecipeResource [http-nio-8090-exec-10] REQUEST :: loginUser for userName: Tony
+2023-03-29 00:22:19,890 [INFO] com.api.recipemanagement.resources.RecipeResource [http-nio-8090-exec-10] RESPONSE :: token generated for userName: Tony
+2023-03-29 00:22:22,340 [INFO] com.api.recipemanagement.resources.RecipeResource [http-nio-8090-exec-2] REQUEST :: getAllRecipes for userId: 1001
+2023-03-29 00:22:22,346 [INFO] com.api.recipemanagement.resources.RecipeResource [http-nio-8090-exec-2] RESPONSE :: 2 recipes returned for userId: 1001
+2023-03-29 00:27:27,437 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-03-29 00:27:27,441 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-03-29 00:27:31,632 [INFO] com.api.recipemanagement.RecipeManagementApplication [restartedMain] Starting RecipeManagementApplication using Java 19.0.2 with PID 23404 (D:\Liknes\Docs\Notes\Personal\SprintBoot\projects\recipe-mamagement-api\recipe-management-api\target\classes started by liknes in D:\Liknes\Docs\Notes\Personal\SprintBoot\projects\recipe-mamagement-api\recipe-management-api)
+2023-03-29 00:27:31,634 [INFO] com.api.recipemanagement.RecipeManagementApplication [restartedMain] The following 1 profile is active: "local"
+2023-03-29 00:27:31,675 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-29 00:27:31,675 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-29 00:27:32,969 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8090 (http)
+2023-03-29 00:27:32,979 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-03-29 00:27:32,979 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-29 00:27:33,034 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-03-29 00:27:33,034 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1358 ms
+2023-03-29 00:27:33,065 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-03-29 00:27:33,240 [INFO] com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@61454a6b
+2023-03-29 00:27:33,241 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-03-29 00:27:33,252 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/recipeapidb'
+2023-03-29 00:27:34,561 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-03-29 00:27:34,597 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8090 (http) with context path ''
+2023-03-29 00:27:34,611 [INFO] com.api.recipemanagement.RecipeManagementApplication [restartedMain] Started RecipeManagementApplication in 3.317 seconds (process running for 3.671)
+2023-03-29 00:27:48,679 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8090-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-29 00:27:48,679 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8090-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-03-29 00:27:48,679 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8090-exec-1] Completed initialization in 0 ms
+2023-03-29 00:33:36,491 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-03-29 00:33:36,497 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-03-29 00:33:43,868 [INFO] com.api.recipemanagement.RecipeManagementApplication [restartedMain] Starting RecipeManagementApplication using Java 19.0.2 with PID 16120 (D:\Liknes\Docs\Notes\Personal\SprintBoot\projects\recipe-mamagement-api\recipe-management-api\target\classes started by liknes in D:\Liknes\Docs\Notes\Personal\SprintBoot\projects\recipe-mamagement-api\recipe-management-api)
+2023-03-29 00:33:43,870 [INFO] com.api.recipemanagement.RecipeManagementApplication [restartedMain] The following 1 profile is active: "local"
+2023-03-29 00:33:43,915 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-29 00:33:43,916 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-29 00:33:44,918 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8090 (http)
+2023-03-29 00:33:44,927 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-03-29 00:33:44,927 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-29 00:33:44,974 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-03-29 00:33:44,974 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1058 ms
+2023-03-29 00:33:45,002 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-03-29 00:33:45,137 [INFO] com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@48a2ad86
+2023-03-29 00:33:45,138 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-03-29 00:33:45,148 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/recipeapidb'
+2023-03-29 00:33:46,072 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-03-29 00:33:46,097 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8090 (http) with context path ''
+2023-03-29 00:33:46,106 [INFO] com.api.recipemanagement.RecipeManagementApplication [restartedMain] Started RecipeManagementApplication in 2.6 seconds (process running for 2.978)
+2023-03-29 00:33:51,714 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8090-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-29 00:33:51,715 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8090-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-03-29 00:33:51,716 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8090-exec-2] Completed initialization in 1 ms
+2023-03-29 00:33:51,779 [INFO] com.api.recipemanagement.resources.RecipeResource [http-nio-8090-exec-2] REQUEST :: getAllRecipes for userId: 1001
+2023-03-29 00:33:51,801 [INFO] com.api.recipemanagement.resources.RecipeResource [http-nio-8090-exec-2] RESPONSE :: 2 recipes returned for userId: 1001
+2023-03-29 00:34:06,646 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-03-29 00:34:06,655 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-03-29 00:34:36,840 [INFO] com.api.recipemanagement.RecipeManagementApplication [restartedMain] Starting RecipeManagementApplication using Java 19.0.2 with PID 21076 (D:\Liknes\Docs\Notes\Personal\SprintBoot\projects\recipe-mamagement-api\recipe-management-api\target\classes started by liknes in D:\Liknes\Docs\Notes\Personal\SprintBoot\projects\recipe-mamagement-api\recipe-management-api)
+2023-03-29 00:34:36,842 [INFO] com.api.recipemanagement.RecipeManagementApplication [restartedMain] The following 1 profile is active: "local"
+2023-03-29 00:34:36,907 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-29 00:34:36,907 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-29 00:34:38,299 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8090 (http)
+2023-03-29 00:34:38,309 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-03-29 00:34:38,309 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-29 00:34:38,358 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-03-29 00:34:38,358 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1450 ms
+2023-03-29 00:34:38,392 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-03-29 00:34:38,558 [INFO] com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@44780a08
+2023-03-29 00:34:38,560 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-03-29 00:34:38,573 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/recipeapidb'
+2023-03-29 00:34:39,847 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-03-29 00:34:39,882 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8090 (http) with context path ''
+2023-03-29 00:34:39,894 [INFO] com.api.recipemanagement.RecipeManagementApplication [restartedMain] Started RecipeManagementApplication in 3.586 seconds (process running for 4.099)
+2023-03-29 00:34:45,364 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8090-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-29 00:34:45,364 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8090-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-03-29 00:34:45,365 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8090-exec-1] Completed initialization in 1 ms
+2023-03-29 00:35:08,457 [WARN] org.springframework.core.LocalVariableTableParameterNameDiscoverer [http-nio-8090-exec-2] Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.api.recipemanagement.resources.RecipeResource
+2023-03-29 00:35:08,613 [WARN] org.springframework.core.LocalVariableTableParameterNameDiscoverer [http-nio-8090-exec-2] Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.api.recipemanagement.resources.UserResource
+2023-03-29 00:35:08,676 [INFO] org.springdoc.api.AbstractOpenApiResource [http-nio-8090-exec-2] Init duration for springdoc-openapi is: 268 ms
+2023-03-29 00:37:02,850 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-03-29 00:37:02,857 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-03-29 00:37:09,202 [INFO] com.api.recipemanagement.RecipeManagementApplication [restartedMain] Starting RecipeManagementApplication using Java 19.0.2 with PID 22496 (D:\Liknes\Docs\Notes\Personal\SprintBoot\projects\recipe-mamagement-api\recipe-management-api\target\classes started by liknes in D:\Liknes\Docs\Notes\Personal\SprintBoot\projects\recipe-mamagement-api\recipe-management-api)
+2023-03-29 00:37:09,206 [INFO] com.api.recipemanagement.RecipeManagementApplication [restartedMain] The following 1 profile is active: "local"
+2023-03-29 00:37:09,298 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-29 00:37:09,298 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-29 00:37:11,697 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8090 (http)
+2023-03-29 00:37:11,717 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-03-29 00:37:11,718 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-29 00:37:11,845 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-03-29 00:37:11,846 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2547 ms
+2023-03-29 00:37:11,912 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-03-29 00:37:12,233 [INFO] com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@84821c5
+2023-03-29 00:37:12,236 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-03-29 00:37:12,258 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/recipeapidb'
+2023-03-29 00:37:14,757 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-03-29 00:37:14,818 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8090 (http) with context path ''
+2023-03-29 00:37:14,842 [INFO] com.api.recipemanagement.RecipeManagementApplication [restartedMain] Started RecipeManagementApplication in 6.257 seconds (process running for 6.654)
+2023-03-29 00:37:20,443 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8090-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-29 00:37:20,443 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8090-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-03-29 00:37:20,444 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8090-exec-2] Completed initialization in 0 ms
+2023-03-29 00:37:20,500 [INFO] com.api.recipemanagement.resources.RecipeResource [http-nio-8090-exec-2] REQUEST :: getAllRecipes for userId: 1001
+2023-03-29 00:37:20,537 [INFO] com.api.recipemanagement.resources.RecipeResource [http-nio-8090-exec-2] RESPONSE :: 2 recipes returned for userId: 1001
+2023-03-29 00:37:21,397 [INFO] com.api.recipemanagement.resources.RecipeResource [http-nio-8090-exec-1] REQUEST :: getAllRecipes for userId: 1001
+2023-03-29 00:37:21,404 [INFO] com.api.recipemanagement.resources.RecipeResource [http-nio-8090-exec-1] RESPONSE :: 2 recipes returned for userId: 1001
+2023-03-29 00:37:22,231 [INFO] com.api.recipemanagement.resources.RecipeResource [http-nio-8090-exec-4] REQUEST :: getAllRecipes for userId: 1001
+2023-03-29 00:37:22,235 [INFO] com.api.recipemanagement.resources.RecipeResource [http-nio-8090-exec-4] RESPONSE :: 2 recipes returned for userId: 1001
+2023-03-29 00:37:22,889 [INFO] com.api.recipemanagement.resources.RecipeResource [http-nio-8090-exec-5] REQUEST :: getAllRecipes for userId: 1001
+2023-03-29 00:37:22,894 [INFO] com.api.recipemanagement.resources.RecipeResource [http-nio-8090-exec-5] RESPONSE :: 2 recipes returned for userId: 1001
+2023-03-29 00:37:23,643 [INFO] com.api.recipemanagement.resources.RecipeResource [http-nio-8090-exec-6] REQUEST :: getAllRecipes for userId: 1001
+2023-03-29 00:37:23,661 [INFO] com.api.recipemanagement.resources.RecipeResource [http-nio-8090-exec-6] RESPONSE :: 2 recipes returned for userId: 1001
+2023-03-29 00:37:24,297 [INFO] com.api.recipemanagement.resources.RecipeResource [http-nio-8090-exec-7] REQUEST :: getAllRecipes for userId: 1001
+2023-03-29 00:37:24,311 [INFO] com.api.recipemanagement.resources.RecipeResource [http-nio-8090-exec-7] RESPONSE :: 2 recipes returned for userId: 1001
+2023-03-29 00:37:30,076 [INFO] org.springdoc.api.AbstractOpenApiResource [http-nio-8090-exec-5] Init duration for springdoc-openapi is: 237 ms
+2023-03-29 00:47:20,185 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-03-29 00:47:20,192 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-03-29 00:50:13,896 [INFO] com.api.recipemanagement.RecipeManagementApplication [restartedMain] Starting RecipeManagementApplication using Java 19.0.2 with PID 1748 (D:\Liknes\Docs\Notes\Personal\SprintBoot\projects\recipe-mamagement-api\recipe-management-api\target\classes started by liknes in D:\Liknes\Docs\Notes\Personal\SprintBoot\projects\recipe-mamagement-api\recipe-management-api)
+2023-03-29 00:50:13,896 [INFO] com.api.recipemanagement.RecipeManagementApplication [restartedMain] The following 1 profile is active: "local"
+2023-03-29 00:50:13,945 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-29 00:50:13,946 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-29 00:50:14,907 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8090 (http)
+2023-03-29 00:50:14,915 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-03-29 00:50:14,915 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-29 00:50:14,961 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-03-29 00:50:14,961 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1015 ms
+2023-03-29 00:50:14,987 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-03-29 00:50:15,122 [INFO] com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@84821c5
+2023-03-29 00:50:15,123 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-03-29 00:50:15,131 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/recipeapidb'
+2023-03-29 00:50:15,976 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-03-29 00:50:16,004 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8090 (http) with context path ''
+2023-03-29 00:50:16,013 [INFO] com.api.recipemanagement.RecipeManagementApplication [restartedMain] Started RecipeManagementApplication in 2.448 seconds (process running for 2.854)
+2023-03-29 00:50:19,499 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8090-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-29 00:50:19,499 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8090-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-03-29 00:50:19,499 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8090-exec-1] Completed initialization in 0 ms
+2023-03-29 00:50:19,752 [INFO] org.springdoc.api.AbstractOpenApiResource [http-nio-8090-exec-1] Init duration for springdoc-openapi is: 216 ms
+2023-03-29 01:20:20,583 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-03-29 01:20:20,587 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
