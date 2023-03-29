@@ -9,7 +9,9 @@ REST API for managing recipes built using Spring Boot
 	-> The Recipe Management API is a REST API that provides CRUD operations to manage recipes.
 
 	-> The application is built using sprint boot framework with tiered acrhitecture:
+			
 		- The API call is processed from the Controller[Resource] to Service to the Persistence[Repository] layer.
+			
 		- It uses below stack:
 			-	Java 19
 			-	Spring Boot 3.0.5
