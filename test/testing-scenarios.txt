@@ -1,0 +1,50 @@
+Testing Scenarios:
+------------------
+
+ 1.	GIVEN recipe details
+	WHEN I create a recipe with an invalid token
+	THEN I receive 403 Forbidden error with message - Invalid/Expired token
+
+ 2.	GIVEN recipe details
+	WHEN I create a recipe with a valid token and valid recipe details
+	THEN the recipe is created with response status 201 and message - recipe created with recipe Id: 1 [Id of recipe]
+
+ 3.	GIVEN recipe details
+	WHEN I create a recipe with a valid token and invalid recipe details
+	THEN I receive 400 Bad Request error with message - Invalid request
+
+ 4.	GIVEN a recipe Id
+	WHEN I get a recipe detail with a valid token and correct recipe Id
+	THEN I receive correct recipe details with status code 200
+	
+ 5.	GIVEN a recipe Id
+	WHEN I get a recipe detail with a valid token and incorrect recipe Id
+	THEN I receive 404 Not Found error with message - Recipe not found!
+
+ 6.	GIVEN recipe details
+	WHEN I update a recipe with a valid token and valid recipe details
+	THEN the recipe is updated with response status 200 and message - recipe updated with recipe Id: 1
+
+ 7.	GIVEN recipe details
+	WHEN I update a recipe with a valid token and invalid recipe details
+	THEN I receive 400 Bad Request error with message - Invalid request
+
+ 8.	GIVEN a recipe Id
+	WHEN I delete a recipe with a valid token and correct recipe Id
+	THEN the recipe is deleted with response status 200 and message - recipe deleted with recipe Id: 2
+	
+ 9.	GIVEN a recipe Id
+	WHEN I delete a recipe with a valid token and incorrect recipe Id
+	THEN I receive 404 Not Found error with message - Recipe not found!
+
+10. GIVEN mulitple recipes are created
+	WHEN I get all recipes with a valid token
+	THEN I receive all recipe details with status 200
+
+11. GIVEN one recipe is created
+	WHEN I get all recipes with a valid token
+	THEN I receive one recipe detail with status 200
+
+12. GIVEN no recipes are created
+	WHEN I get all recipes with a valid token
+	THEN I receive 404 Not Found error with message - Recipe not found!
