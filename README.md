@@ -166,6 +166,8 @@ REST API for managing recipes built using Spring Boot
 	-> Once the application is running its swagger can be accessed using below URL:
 	
 		http://localhost:8090/swagger-ui/index.html
-		
+
+![image](https://user-images.githubusercontent.com/46901378/228574448-c6843619-5d8c-4267-b2e1-f31f4a92f498.png)
+
 **************************************************************************************************************************
 
