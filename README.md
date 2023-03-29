@@ -21,7 +21,7 @@ REST API for managing recipes built using Spring Boot
 
 		Users:
 			- registerUser		--	/api/users/register
-			- loginUser			--	/api/users/login
+			- loginUser		--	/api/users/login
 
 		Recipes:
 			- createRecipe		--	/api/recipes
@@ -101,7 +101,7 @@ REST API for managing recipes built using Spring Boot
 		4. Execute DB script [recipe_management_db.sql] in repository to create DB objects:
 			a. open command prompt and navigate to the db script directory
 			b. copy db scripts to postgres container using command
-				->>	docker cp recipe_management_db.sql postgresdb:/
+				->> docker cp recipe_management_db.sql postgresdb:/
 			c. login to the db container using command
 				->> docker exec -it postgresdb bash
 			d. execute db script using command
@@ -141,7 +141,8 @@ REST API for managing recipes built using Spring Boot
  3. Testing the application:
 	========================
 
-   		a. To test the app open Postman and import 'recipe-management-api.postman_collection.json' collection from 'test/postman' path in repo
+   		a. To test the app open Postman and import 'recipe-management-api.postman_collection.json' collection
+		   [ The postman collection is in 'test/postman' path in repository ]
 
 		b. To start testing first step is to register/login a user and get JWT token:
 			- Run the registerUser/loginUser request from postman collection
