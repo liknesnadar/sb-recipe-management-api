@@ -91,7 +91,7 @@ REST API for managing recipes built using Spring Boot
 	   ------------------------------------------------------------------------------------
 		1. Check out source code from GitHub repo and open in an IDE
 		
-		[Note: If you have local postgres DB then skip to step - 4.d]
+		[ Note: If you have local postgres DB then skip to step - 4.d ]
 		
 		2. Open docker desktop and open command prompt / terminal
 		
