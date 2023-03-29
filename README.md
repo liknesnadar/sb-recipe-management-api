@@ -142,7 +142,7 @@ REST API for managing recipes built using Spring Boot
 	========================
 
    		a. To test the app open Postman and import 'recipe-management-api.postman_collection.json' collection
-		   [ The postman collection is in 'test/postman' path in repository ]
+		   [ Note: The postman collection is in 'test/postman' path in repository ]
 
 		b. To start testing first step is to register/login a user and get JWT token:
 			- Run the registerUser/loginUser request from postman collection
