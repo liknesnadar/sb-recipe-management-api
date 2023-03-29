@@ -1,6 +1,7 @@
 # sb-recipe-management-api
 REST API for managing recipes built using Spring Boot
 
+**************************************************************************************************************************
 
  1. Application Summary:
   	====================
@@ -158,4 +159,13 @@ REST API for managing recipes built using Spring Boot
 			- The getRecipeById, updateRecipe and deleteRecipe requires the recipeId
 			- The RecipeId can be fetched from response of createRecipe or getAllRecipes operations
 
+
+ 4. Swagger:
+  	====================
+	
+	-> Once the application is running its swagger can be accessed using below URL:
+	
+		http://localhost:8090/swagger-ui/index.html
+		
+**************************************************************************************************************************
 
