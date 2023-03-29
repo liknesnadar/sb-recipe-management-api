@@ -64,9 +64,9 @@ REST API for managing recipes built using Spring Boot
 
 	a. Application running locally in IDE or docker and using in-memory H2 database:
 	   -----------------------------------------------------------------------------
-	   1. Check out source code from GitHub repo and open in an IDE
+	   	1. Check out source code from GitHub repo and open in an IDE
 
-	   2. Start the application with spring profile 'memory' that uses 'application-memory.properties' file
+	   	2. Start the application with spring profile 'memory' that uses 'application-memory.properties' file
 	   		
 	   		- If starting the application from IDE set below property in 'application.properties' file:
 	   			-- 'spring.profiles.active=memory'
@@ -122,38 +122,39 @@ REST API for managing recipes built using Spring Boot
 
 	c. With Application and Postgres DB running as docker container:
 	   -------------------------------------------------------------
-	   1. Follow steps 1 to 4 from above
+	   	1. Follow steps 1 to 4 from above
 
-	   2. To start the application as docker container open terminal and navigate to the 'Dockerfile' location in repo checkout path
+	   	2. To start the application as docker container open terminal and navigate to the 'Dockerfile' location in repo checkout path
 
-	   4. Execute below command to start the application container:
-	   		->> docker build --tag sbrecipeapi:latest .
+	   	3. Execute below command to start the application container:
+	   		
+			->> docker build --tag sbrecipeapi:latest .
 	   		->> docker run --name sbrecipeapi -d -p 8090:8090 sbrecipeapi
 
-	   5. Check the running containers using Docker Desktop or 'docker ps' command in terminal
+	   	4. Check the running containers using Docker Desktop or 'docker ps' command in terminal
 
-	   6. Once the postgres and docker containers are running use the postman collection to test the APIs
-	      [Refer section - 3. Testing the application for testing using postman]
+	   	5. Once the postgres and docker containers are running use the postman collection to test the APIs
+	      		[Refer section - 3. Testing the application for testing using postman]
 
 
 
  3. Testing the application:
 	========================
 
-   	a. To test the app open Postman and import 'recipe-management-api.postman_collection.json' collection from 'test/postman' path in repo
+   		a. To test the app open Postman and import 'recipe-management-api.postman_collection.json' collection from 'test/postman' path in repo
 
-	b. To start testing first step is to register/login a user and get JWT token:
-		- Run the registerUser/loginUser request from postman collection
-		- Use the 'token' received in response to invoke operations of Recipes resource
-		- The token is valid for one hour
+		b. To start testing first step is to register/login a user and get JWT token:
+			- Run the registerUser/loginUser request from postman collection
+			- Use the 'token' received in response to invoke operations of Recipes resource
+			- The token is valid for one hour
 
-	c. Testing recipes resource:
-		- Use the token generated in previous step to create a recipe using 'createRecipe' operation
-		- Once created use the 'getAllRecipes' operation to see all the recipes
-		- Use the 'getRecipeById' operation to see a specific recipe
-		- Use the 'updateRecipe' operation to update a recipe
-		- Use the 'deleteRecipe' operation to delete a recipe
-		- The getRecipeById, updateRecipe and deleteRecipe requires the recipeId
-		- The RecipeId can be fetched from response of createRecipe or getAllRecipes operations
+		c. Testing recipes resource:
+			- Use the token generated in previous step to create a recipe using 'createRecipe' operation
+			- Once created use the 'getAllRecipes' operation to see all the recipes
+			- Use the 'getRecipeById' operation to see a specific recipe
+			- Use the 'updateRecipe' operation to update a recipe
+			- Use the 'deleteRecipe' operation to delete a recipe
+			- The getRecipeById, updateRecipe and deleteRecipe requires the recipeId
+			- The RecipeId can be fetched from response of createRecipe or getAllRecipes operations
 
 
